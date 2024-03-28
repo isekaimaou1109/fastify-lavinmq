@@ -1,0 +1,42 @@
+{
+  "name": "@isekaimaouyoki-sama/fastify-lavinmq",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "This package is wrapper for LavinMQ Message Broker",
+  "exports": {
+    "import": "./index.js",
+    "require": "./index.cjs"
+  },
+  "license": "ISC",
+  "scripts": {
+    "preinstall": "npx rollup index.js --file index.cjs --format cjs"
+  },
+  "author": {
+    "email": "nhat11092000@gmail.com",
+    "name": "isekaimaou1109",
+    "url": "https://github.com/isekaimaou1109"
+  },
+  "keywords": [
+    "message broker",
+    "broker",
+    "lavinmq",
+    "message queue",
+    "queue"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isekaimaou1109/fastify-lavinmq.git"
+  },
+  "homepage": "https://github.com/isekaimaou1109/fastify-lavinmq#readme",
+  "bugs": {
+    "url": "https://github.com/isekaimaou1109/fastify-lavinmq/issues",
+    "email": "nhat11092000@gmail.com"
+  },
+  "dependencies": {
+    "@cloudamqp/amqp-client": "^3.1.1",
+    "fastify-plugin": "^4.5.1"
+  },
+  "devDependencies": {
+    "rollup": "^4.13.1"
+  }
+}
